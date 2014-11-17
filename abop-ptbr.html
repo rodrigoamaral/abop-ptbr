@@ -3335,7 +3335,7 @@ running = <span class="kw2">True</span>
 
             <li class="toclevel-1 tocsection-6"><a href=
             "#Valores_padr.C3.A3o_de_argumentos"><span class=
-            "tocnumber">6</span> <span class="toctext">Valores padrão de
+            "tocnumber">6</span> <span class="toctext">valores padrões de
             argumentos</span></a></li>
 
             <li class="toclevel-1 tocsection-7"><a href=
@@ -3445,7 +3445,7 @@ digaOla<span class="br0">(</span><span class="br0">)</span> <span class=
   função, separados por vírgulas. Quando chamamos a função, passamos os valores
   da mesma maneira. Note a terminologia utilizada - os nomes dados na definição
   da função são chamados de <i>parâmetros</i> enquanto que os valores que
-  fornecemos na chamada da função são chamados de <i>argusmentos</i>.</p>
+  fornecemos na chamada da função são chamados de <i>argumentos</i>.</p>
 
   <p>Exemplo:</p>
 
@@ -3491,7 +3491,7 @@ printMax<span class="br0">(</span>x, y<span class="br0">)</span> <span class=
   usando um simples comando <tt>if..else</tt> e então imprimindo o maior
   número.</p>
 
-  <p>No primeiro uso de <tt>printMax</tt>, nos passamos diretamente os números
+  <p>No primeiro uso de <tt>printMax</tt>, nós passamos diretamente os números
   (argumentos). No segundo, chamamos a função usando variáveis. <tt>printMax(x,
   y)</tt> faz com que o valor do argumento <tt>x</tt> seja atribuído ao
   parâmetro <tt>a</tt> e o valor do argumento <tt>y</tt> atribuído ao parâmetro
@@ -3548,7 +3548,7 @@ func<span class="br0">(</span>x<span class="br0">)</span>
   Python utiliza o valor do parâmetros declarado na função.</p>
 
   <p>Em seguida, atribuímos o valor <tt>2</tt> a <tt>x</tt>. O nome <tt>x</tt>
-  é local à nossa função. Então, quando mudamos o valor de <tt>x</tt> na
+  é local a nossa função. Então, quando mudamos o valor de <tt>x</tt> na
   função, o <tt>x</tt> definido no bloco principal permanece inalterado.</p>
 
   <p>No último comando <tt>print</tt>, confirmamos que o valor de <tt>x</tt> no
@@ -3557,7 +3557,7 @@ func<span class="br0">(</span>x<span class="br0">)</span>
   <h2><span class="mw-headline" id="Usando_o_comando_global">Usando o comando
   global</span></h2>
 
-  <p>Se você quer atribuit um valor a um nome definido no nível mais alto do
+  <p>Se você quer atribuir um valor a um nome definido no nível mais alto do
   programa, ou seja, fora de qualquer tipo de escopo tal como funções ou
   classes, então você tem que dizer ao Python que o nome não é local, mas sim
   <i>global</i>. Fazemos isso usando o comando <tt>global</tt>. É impossível
@@ -3677,9 +3677,9 @@ func_outer<span class="br0">(</span><span class="br0">)</span>
   padrão de argumentos</span></h2>
 
   <p>Para algumas funções, você pode querer que alguns dos seus parâmetros
-  sejam <i>opcionais</i> e usar valores padrão pré-definidos se o usuário não
+  sejam <i>opcionais</i> e usar valores padrões pré-definidos se o usuário não
   quiser fornecer valores para esses parâmetros. Isto é feito com a ajuda de
-  valores padrão de argumentos. Você pode especificar valores padrão de
+  valores padrões de argumentos. Você pode especificar valores padrões de
   argumentos para parâmetros colocando o operador de atribuição (<tt>=</tt>)
   após o nome do parâmetro na definição da função, seguifo pelo valor
   padrão.</p>
@@ -3727,14 +3727,14 @@ say<span class="br0">(</span><span class="st0">'Mundo'</span>, <span class=
 
   <p>No primeiro uso de <tt>say</tt>, fornecemos apenas a string e ele a
   imprime uma vez. No segundo uso de <tt>say</tt>, fornecemos tanto a string
-  quanto o argumento 5 <tt>5</tt> determinando que queremos <i>dizer</i> a
+  quanto o argumento <tt>5</tt> determinando que queremos <i>dizer</i> a
   mensagem 5 vezes.</p>
 
   <dl>
     <dt>Importante</dt>
 
     <dd>Apenas os parâmetros que estiverem no final da lista de parâmetros
-    podem receber valores padrão de argumento, ou seja, você não pode ter um
+    podem receber valores padrões de argumento, ou seja, você não pode ter um
     parâmetro com valor de argumento padrão antes de um parâmetro sem um valor
     de argumento padrão na ordem dos parâmetros declarados na lista de
     parâmetros da função.</dd>
@@ -3756,7 +3756,7 @@ say<span class="br0">(</span><span class="st0">'Mundo'</span>, <span class=
   <p>Existem duas <i>vantagens</i> nessa abordagem: primeiro, é mais fácil usar
   a função, uma vez que não precisamos nos preocupar com a ordem dos
   argumentos. Segundo, podemos dar valores apenas para os parâmetros que
-  quisermos, desde que os demais tenham valores padrão de argumento.</p>
+  quisermos, desde que os demais tenham valores padrões de argumento.</p>
 
   <p>Exemplo:</p>
 
@@ -3792,8 +3792,8 @@ func<span class="br0">(</span>c=<span class="nu0">50</span>, a=<span class=
 
   <p>Como funciona:</p>
 
-  <p>A função chamada <tt>func</tt> tem um parâmetro sem valores padrão de
-  argumento, seguida por dois parâmetros sem valores padrão de argumento.</p>
+  <p>A função chamada <tt>func</tt> tem um parâmetro sem valores padrões de
+  argumento, seguida por dois parâmetros sem valores padrões de argumento.</p>
 
   <p>No primeiro uso, <tt>func(3, 7)</tt>, o parâmetro <tt>a</tt> recebe o
   valor <tt>3</tt>, o parametro <tt>b</tt> recebe o valor <tt>5</tt> e
@@ -4011,11 +4011,8 @@ func<span class="br0">(</span>c=<span class="nu0">50</span>, a=<span class=
   <p>Python possui um recurso chamado <i>strings de documentação</i>,
   usualmente conhecidas pelo seu nome mais curto, <i>docstrings</i>. DocStrings
   são uma ferramenta importante da qual você deve fazer uso, uma vez que ela
-  ajuda a documentar o programa e o torna mais fácil de entender. Python has a
-  nifty feature called <i>documentation strings</i>, usually referred to by its
-  shorter name <i>docstrings</i>. DocStrings are an important tool that you
-  should make use of since it helps to document the program better and makes it
-  more easy to understand. Surpreendentemente, podemos até obter a docstring
+  ajuda a documentar o programa e o torna mais fácil de entender. 
+  Surpreendentemente, podemos até obter a docstring
   de, digamos, uma função, durante a execução do programa!</p>
 
   <p>Exemplo:</p>
@@ -4115,7 +4112,7 @@ printMax<span class="br0">(</span><span class="nu0">3</span>, <span class=
   aspectos. Entretanto, cobrimos a maioria das funções de Python que você
   precisará dia após dia.</p>
 
-  <p>E seguida, veremos como usar e criar módulos de Python.</p>s
+  <p>E seguida, veremos como usar e criar módulos de Python.</p>
 
   <h1 id="ch_modulos">Módulos</h1>
 
@@ -4229,7 +4226,7 @@ printMax<span class="br0">(</span><span class="nu0">3</span>, <span class=
   <tt>import</tt>. Basicamente, isso se traduz em nós dizermos a Python que
   queremos empregar este módulo. O módulo <tt>sys</tt> contém funcionalidade
   relacionada ao interpretador de Python e o seu ambiente, ou seja, o
-  <i>sys</i>tema.</p>
+  <i>system</i> (sistema).</p>
 
   <p>Quando Python executa o comando <tt>import sys</tt>, procura pelo módulo
   <tt>sys.py</tt> em um dos diretórios listados na sua variável
@@ -4307,7 +4304,7 @@ printMax<span class="br0">(</span><span class="nu0">3</span>, <span class=
   programa (para evitar ficar digitando <tt>sys.</tt> todas as vezes), então
   você pode usar o comando <tt>from sys import argv</tt>. Se você quiser
   importar todos os nomes usados no módulo <tt>sys</tt>, então você pode usar o
-  oomando <tt>from sys import *</tt>. Isso funciona com qualquer módulo.</p>
+  comando <tt>from sys import *</tt>. Isso funciona com qualquer módulo.</p>
 
   <p>Em geral, você <b>deve evitar</b> o uso desse comando e, ao invés,
   utilizar o comando <tt>import</tt>, pois dessa forma você evitará colisão de
@@ -4317,10 +4314,10 @@ printMax<span class="br0">(</span><span class="nu0">3</span>, <span class=
   Módulo</span></h2>
 
   <p>Todo módulo tem um nome e comandos em um módulo podem encontrá-lo. Isso é
-  conveniente na situação particular em que se proecisa descobrir se o módulo
+  conveniente na situação particular em que se precisa descobrir se o módulo
   está sendo executado por si só ou está sendo importado. Como mencionado
   anteriormente, quando um módulo é importado pela primeira vez, o bloco
-  principal (main) daquele módulo é executado. Nó podemos usar esse conceito
+  principal (main) daquele módulo é executado. Nós podemos usar esse conceito
   para executar o bloco apenas se o programa for usado por si só e não quando
   for importado por outro módulo. Isso pode ser alcançado usando o atributo
   <tt>__name__</tt> do módulo.</p>
@@ -4427,7 +4424,7 @@ mymodule.<span class="me1">sayhi</span><span class="br0">(</span><span class=
 
   <p>Note que nós empregamos a notação dos pontos para acessar os membros do
   módulo. Python utiliza bastante a mesma notação que lhe dá a característica
-  'Pythonica' a ela, e modo que não temos que ficar aprendendo novas maneiras
+  'Pythonica' a ela, de modo que não temos que ficar aprendendo novas maneiras
   de fazer as coisas.</p>
 
   <p>Aqui está a versão utilizando a sintaxe <tt>from..import</tt>.</p>
@@ -4724,8 +4721,8 @@ fo'</span>, <span class="st0">'warnoptions'</span>, <span class=
   <p>A lista de itens deverá estar dentro de colchetes (square brackets), de
   modo que Python entende que você está especificando uma lista. Uma vez que
   você criou a lista, pode adicionar, remover ou fazer buscas por itens dela.
-  Desde que nós podemos adicionar e remover itens, dizemos que uma lista é um
-  tipo <i>mutável</i> de dados, ous seja, este tipo pode ser alterado.</p>
+  Desde que nós possamos adicionar e remover itens, dizemos que uma lista é um
+  tipo <i>mutável</i> de dados, ou seja, este tipo pode ser alterado.</p>
 
   <h3><span class="mw-headline" id=
   "R.C3.A1pida_Introdu.C3.A7.C3.A3o_a_Objetos_e_Classes">Rápida Introdução a
@@ -4858,7 +4855,7 @@ olditem = shoplista<span class="br0">[</span><span class=
   comando <tt>print</tt>, que a imprime sem problemas.</p>
 
   <p>Daí nós ordenamos a lista por meio do método <tt>sort</tt> do objeto
-  lista. É importante compreender que este método afeta a a própria lista e que
+  lista. É importante compreender que este método afeta a própria lista e que
   não retorna uma lista modificada - isso é diferente da maneira pela qual a
   string funciona. É o que nós queremos salientar quando dizemos que as listas
   são <i>mutáveis</i> e as strings são <i>imutáveis</i>.</p>
@@ -4953,8 +4950,6 @@ novo_zoo = <span class="br0">(</span><span class=
   domine o jeito.</p>
 
   <dl>
-    <dt>s</dt>
-
     <dt>Tuplas com 0 ou 1 item</dt>
 
     <dd>Uma tupla vazia é construída com um par de parênteses como <tt>vazia =
@@ -5096,7 +5091,7 @@ ab<span class="br0">[</span><span class="st0">'Guido'</span><span class=
   operador de indexação para acessar a key e atribuirmos aquele value, como
   fizemos para Guido no caso acima.</p>
 
-  <p>Nó podemos verificar se um par key/value existe, usando o operador
+  <p>Nós podemos verificar se um par key/value existe, usando o operador
   <tt>in</tt> ou mesmo o método <tt>has_key</tt> da classe <tt>dict</tt>. Você
   pode ver a documentação para a lista completa de métodos da classe
   <tt>dict</tt>, usando <tt>help(dict)</tt>.</p>
@@ -5227,7 +5222,7 @@ name = <span class="st0">'swaroop'</span>
 
   <p>O índice pode também ser um número negativo, em cujo caso, a posição é
   calculada a partir do fim da sequência. Assim, <tt>shoplist[-1]</tt>
-  refere-se ao último item da sequência e <tt>shoplist[-2]</tt> recuoera o
+  refere-se ao último item da sequência e <tt>shoplist[-2]</tt> recupera o
   penúltimo item da sequência.</p>
 
   <p>A operação de slicing é empregada especificando-se o nome da sequência
@@ -5318,7 +5313,7 @@ name = <span class="st0">'swaroop'</span>
   objeto.</p>
 
   <p>Em geral você não precisa ficar preocupado com isso, mas existe um efeito
-  sutil devido a referências ao qual você precosa ficar atento:</p>
+  sutil devido a referências ao qual você precisa ficar atento:</p>
 
   <p>Exemplo:</p>
 
@@ -5340,7 +5335,7 @@ mylist = shoplist <span class=
 <span class="kw1">del</span> shoplist<span class="br0">[</span><span class=
 "nu0">0</span><span class="br0">]</span> <span class=
 "co1"># Eu comprei o primeiro item , então eu o removo da lista</span>
-&amp;nbssp;
+&amp;&nbsp;
 <span class="kw1">print</span><span class="br0">(</span><span class=
 "st0">'shoplist is'</span>, shoplist<span class="br0">)</span>
 <span class="kw1">print</span><span class="br0">(</span><span class=
@@ -5381,7 +5376,7 @@ mylist = shoplist<span class="br0">[</span>:<span class=
 
   <p>A maior parte da explicação está disponível nos próprios comentários.</p>
 
-  <p>O que você precisa lembrar é que quiser fazer uma cópia de uma lista ou
+  <p>O que você precisa lembrar é que se quiser fazer uma cópia de uma lista ou
   tais espécies de sequências ou objetos complexos (não <i>objetos</i> simples
   como inteiros), então você deve utilizar a operação de slicing para efetuar
   uma cópia. Se você apenas atribuir o nome da variável a outro nome, então
@@ -5475,7 +5470,7 @@ mylist = <span class="br0">[</span><span class=
 
   <h2><span class="mw-headline" id="Resumo">Resumo</span></h2>
 
-  <p>Nós esxploramos detalhadamente as várias estruturas internas (built-in) de
+  <p>Nós exploramos detalhadamente as várias estruturas internas (built-in) de
   Python. Estas estruturas serão essenciais para escrever programas de um
   tamanho razoável.</p>
 
@@ -5658,7 +5653,7 @@ comando_zip = <span class="st0">"zip -qr {0} {1}"</span>.<span class=
   se ele executa adequadamente por si mesmo. Se o comando falhar, verifique no
   manual do comando zip o que poderia estar errado. Se o comando for bem
   sucedido, então verifique se o programa em Python corresponde exatamente ao
-  prograna escrito acima.</p>
+  programa escrito acima.</p>
 
   <p>Como funciona:</p>
 
@@ -5667,7 +5662,7 @@ comando_zip = <span class="st0">"zip -qr {0} {1}"</span>.<span class=
 
   <p>Nós fazemos uso dos módulos <tt>os</tt> e <tt>time</tt>, antes de tudo
   importando-os. Então, nós especificamos os arquivos e diretórios cujo backup
-  deve ser realizado na lista tt&gt;origem&lt;/tt&gt;. O diretório alvo é onde
+  deve ser realizado na lista <tt>origem</tt>. O diretório alvo é onde
   nós armazenamos todos os arquivos do backup e este está especificado pela
   variável <tt>dir_alvo</tt>. O nome do arquivo zip que iremos criar é a data e
   hora correntes, os quais nós obtemos utilizando a função
@@ -5697,7 +5692,7 @@ comando_zip = <span class="st0">"zip -qr {0} {1}"</span>.<span class=
   DOS).</p>
 
   <p>Ao comando <tt>zip</tt> que nós estamos usando, são passadas algumas
-  opções e parâmetros. A opção The <tt>-q</tt> é empregada para indicar que o
+  opções e parâmetros. A opção <tt>-q</tt> é empregada para indicar que o
   comando zip deve operar de forma silenciosa (<b>q</b>uiet). A opção -r
   especifica que o comando zip deve trabalhar <b>r</b>ecursivamente sobre os
   diretórios, ou seja, deverá incluir todos os subdiretórios e arquivos. As
@@ -5857,7 +5852,7 @@ comando_zip = <span class="st0">"zip -qr {0} {1}"</span>.<span class=
   quando há um número muito grande de backups, eu estou achando difícil
   diferenciar para que razão são os backups! Por exemplo, eu poderia ter feito
   algumas alterações significativas a um programa ou apresentação, então eu
-  gostaria a razão para aquelas alterações ao nome do arquivo zip. Isso pode
+  gostaria da razão para aquelas alterações ao nome do arquivo zip. Isso pode
   ser facilmente obtido associando-se um comentário fornecido pelo usuário ao
   nome do arquivo zip.</p>
 
@@ -5965,7 +5960,7 @@ comando_zip = <span class="st0">"zip -qr {0} {1}"</span>.<span class=
   <p><i>Este programa não funciona!</i> Python está dizendo que existe um erro
   de sintaxe o que significa que o script não satisfaz a estrutura que Python
   espera encontrar. Quando nós observamos o erro dado por Python, ele também
-  nos aponta o local onde detetou o erro. Então nós começamos a <i>debugar</i>
+  nos aponta o local onde detectou o erro. Então nós começamos a <i>debugar</i>
   o nosso programa a partir daquela linha.</p>
 
   <p>Mediante uma observação mais cuidadosa, nós verificamos que a única linha
@@ -6136,9 +6131,9 @@ comando_zip = <span class="st0">"zip -qr {0} {1}"</span>.<span class=
 
     <li>Faça (Implementação)</li>
 
-    <li>Teste (Testando and 'Debugando')</li>
+    <li>Teste (Testando e 'Debugando')</li>
 
-    <li>Use (Operação or Emprego)</li>
+    <li>Use (Operação ou Emprego)</li>
 
     <li>Mantenha (Refinamento)</li>
   </ol>
@@ -6155,8 +6150,8 @@ comando_zip = <span class="st0">"zip -qr {0} {1}"</span>.<span class=
 
   <p>Nós vimos como criar os nossos próprios programas/scripts em Python e os
   vários estágios envolvidos ao escrever esses programas. Você poderá achar
-  útil criar o seu pŕoprio programa da mesma maneira que nós fizemos nesse
-  capítulo, de modo que você se fique à vontade não apemnas com Python, mas
+  útil criar o seu próprio programa da mesma maneira que nós fizemos nesse
+  capítulo, de modo que você se fique à vontade não apenas com Python, mas
   também com a resolução de problemas.</p>
 
   <p>A seguir, discutiremos a programação orientada a objetos.</p>
@@ -6245,7 +6240,7 @@ comando_zip = <span class="st0">"zip -qr {0} {1}"</span>.<span class=
   </dl>
 
   <p>Objetos podem armazenar dados utilizando variáveis comuns que
-  <i>pertencem</i> ao objeto. Variáveis que pertencem a um objeto o classe são
+  <i>pertencem</i> ao objeto. Variáveis que pertencem a um objeto ou classe são
   chamadas de <b>campos</b>. Objetos também podem ter funcionalidade por meio
   de funções que <i>pertencem</i> a uma classe. Tais funções são chamadas de
   <b>métodos</b> da classe. Esta terminologia é importante porque nos ajuda a
@@ -6263,7 +6258,7 @@ comando_zip = <span class="st0">"zip -qr {0} {1}"</span>.<span class=
 
   <h2><span class="mw-headline" id="O_self">O self</span></h2>
 
-  <p>Os métodos tem apenas uma diferença específica em relação a funções
+  <p>Os métodos têm apenas uma diferença específica em relação a funções
   comuns: eles devem ter um primeiro nome extra que deve ser incluído no início
   da lista de parâmetros, mas você <i>não</i> deve atribuir um valor a esse
   parâmetro quando chama o método, pois o Python o fornece implicitamente. Essa
@@ -6606,9 +6601,9 @@ Robot.<span class="me1">howMany</span><span class="br0">(</span><span class=
   <tt>name</tt> pertence ao objeto (instância, pois é atribuída usando
   <tt>self</tt>) e, portanto, é uma variável de instância.</p>
 
-  <p>Assim, nos referímos à variável de classe <tt>population</tt> como
+  <p>Assim, nos referimos à variável de classe <tt>population</tt> como
   <tt>Robot.population</tt> e não como <tt>self.population</tt>. Por outro
-  lado, nos referímos à variável de instância <tt>name</tt> usando a notação
+  lado, nos referimos à variável de instância <tt>name</tt> usando a notação
   <tt>self.name</tt>, nos métodos daquele objeto. Lembre-se desta simples
   diferença entre variáveis de classe e de instância. Note também que, uma
   variável de instância com o mesmo nome de uma variável de classe irá se
@@ -6699,7 +6694,7 @@ Robot.<span class="me1">howMany</span><span class="br0">(</span><span class=
   <h2><span class="mw-headline" id="Heran.C3.A7a">Herança</span></h2>
 
   <p>Um dos maiores benefícios da programação orientada a objetos é
-  <b>reusabilidade</b> de código, e uma maneiras de obter isto é através do
+  <b>reusabilidade</b> de código, e uma maneira de obter isto é através do
   mecanismo de <i>herança</i>. Herança pode ser imaginada como a implementação
   de um relacionamento <i>tipo e subtipo</i> entre classes.</p>
 
@@ -7756,7 +7751,7 @@ with opened<span class="br0">(</span><span class=
   "Introdu.C3.A7.C3.A3o">Introdução</span></h2>
 
   <p>A Biblioteca Padrão do Python contém um vasto número de módulos úteis e é
-  parte de todas as instalações de Python. É importante conhece-la, uma vez que
+  parte de todas as instalações de Python. É importante conhecê-la, uma vez que
   muitos problemas podem ser resolvidos rapidamente se você estiver
   familiarizado com o grande número de coisas que estas bibliotecas podem
   fazer.</p>
@@ -7941,7 +7936,7 @@ with opened<span class="br0">(</span><span class=
   teremos a localização completa do arquivo.</p>
 
   <p>Nós usamos a função <tt>os.path.join()</tt> para juntar estas três partes
-  da localização. O motivo de usar uma função especial ao inves de apenas somar
+  da localização. O motivo de usar uma função especial ao invés de apenas somar
   as strings, é que esta função se assegura de que a localização completa
   esteja de acordo com o formato esperado pelo sistema operacional.</p>
 
@@ -8062,12 +8057,12 @@ query = <span class="kw2">input</span><span class="br0">(</span><span class=
   <p>Então, por exemplo, abra <a href=
   "http://search.yahooapis.com/WebSearchService/V1/webSearch?query=byte+of+python&amp;appid=jl22psvV34HELWhdfUJbfDQzlJ2B57KFS_qs4I8D0Wz5U5_yCI1Awv8.lBSfPhwr&amp;results=20&amp;start=1&amp;output=json"
   class="external text" rel="nofollow">este link em seu navegador</a> e você
-  vera 20 resultados, iniciando do primeiro, para a busca das palavras "byte of
+  verá 20 resultados, iniciando do primeiro, para a busca das palavras "byte of
   python". Este endereço nos dá os resultados no formato JSON.</p>
 
   <p>Nós realizamos a conexão a este URL usando a função
   <tt>urllib.request.urlopen()</tt> e passando o arquivo obtido para
-  <tt>json.load()</tt> que irá ler seu conteúdo e simultâneamente converte-li
+  <tt>json.load()</tt> que irá ler seu conteúdo e simultâneamente convertê-la
   em um objeto Python. Então nós usamos um loop nestes resultados para
   mostrá-los ao usuário final.</p>
 
@@ -8212,7 +8207,7 @@ query = <span class="kw2">input</span><span class="br0">(</span><span class=
   <p>Os métodos especiais são empregados para emular certos comportamentos dos
   tipos 'built-in'. Por exemplo, se você quiser usar a operação de indexação
   x[indice] para a sua classe (exatamente como você faria para listas e
-  tuplas), então tudo o que voc deve fazer é implementar o método __getitem__()
+  tuplas), então tudo o que você deve fazer é implementar o método __getitem__()
   e está feito. Se você refletir a respeito, isto é o que Python faz no caso da
   própria classe das listas!</p>
 
