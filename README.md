@@ -4,7 +4,7 @@ Tradução do livro [A Byte of Python](http://www.swaroopch.com/notes/Python) pa
 
 ## Sobre o livro
 
-Voltado para iniciantes, o livro [A Byte of Python](http://www.swaroopch.com/notes/Python) foi escrito por [Swaroop C. H.](http://swaroopch.com/) Sua finalidade é ser um tutorial para pessoas que têm vontade de aprender a programar mas ainda não conhecem nenhuma linguagem. Segundo o autor, "se tudo o que você sabe sobre computadores é como salvar arquivos de texto, então este livro é para você.". 
+Voltado para iniciantes, o livro [A Byte of Python](http://www.swaroopch.com/notes/Python) foi escrito por [Swaroop C. H.](http://swaroopch.com/) Sua finalidade é ser um tutorial para pessoas que têm vontade de aprender a programar mas ainda não conhecem nenhuma linguagem. Segundo o autor, "se tudo o que você sabe sobre computadores é como salvar arquivos de texto, então este livro é para você".
 
 ## Sobre a tradução
 
