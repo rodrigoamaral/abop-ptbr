@@ -18,6 +18,7 @@ A [edição traduzida](http://swaroopch.com/notes/Python_pt-br:Indice) contempla
 - Estêvão Valadão
 - Éverton Arruda
 - Lucas Castro
+- Naner Nunes
 - Rodrigo Haas
  
 
